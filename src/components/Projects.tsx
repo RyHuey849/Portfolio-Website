@@ -1,3 +1,15 @@
+import ProjectCard from "@/components/ProjectCard";
+
+const projects = [
+  {
+    name: "Project Name",
+    description:
+      "A short description of what this project does and what you built it with. Two sentences is plenty.",
+    demo: "/projects/placeholder.svg",
+    demoAlt: "Placeholder demo image",
+  },
+];
+
 export default function Projects() {
   return (
     <section
@@ -11,6 +23,14 @@ export default function Projects() {
       >
         Projects
       </h2>
+
+      <ul className="mt-12 grid gap-6 sm:grid-cols-2">
+        {projects.map((project) => (
+          <li key={project.name}>
+            <ProjectCard {...project} />
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
