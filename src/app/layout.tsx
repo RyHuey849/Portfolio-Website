@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full scroll-pt-16 scroll-smooth antialiased`}
     >
       <body id="top" className="min-h-full flex flex-col">
         <Header />

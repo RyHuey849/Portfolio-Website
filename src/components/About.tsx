@@ -1,14 +1,21 @@
 import Image from "next/image";
 
 const skills = [
-  "Skill",
-  "Skill",
-  "Skill",
-  "Skill",
-  "Skill",
-  "Skill",
-  "Skill",
-  "Skill",
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "Java",
+  "Python",
+  "PHP",
+  "SQL",
+  "React.js",
+  "Vue.js",
+  "Laravel",
+  "Node.js",
+  "Spring Boot",
+  "Jest",
+  "Selenium",
+  "MySQL",
 ];
 
 export default function About() {
@@ -38,15 +45,22 @@ export default function About() {
 
         <div className="flex flex-col">
           <p className="max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-            A short bio goes here — a couple of sentences on who you are, what
-            you like to build, and what you are working toward. Keep it concrete
-            and skip the buzzwords.
+            I started out as a software engineer, writing and shipping web
+            applications. Over time I noticed the work I actually looked forward
+            to was everything around the code — tracking down why a deployment
+            broke, untangling a network issue, getting a machine back to a state
+            people could work on. So I am making the move into IT on purpose,
+            not as a fallback.
           </p>
 
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-            A second paragraph for background: where you have worked or studied,
-            the problems you enjoy solving, and what you do when you are away
-            from the keyboard.
+            Engineering gave me a head start on the parts of IT that trip people
+            up: reading logs instead of guessing, scripting the task I would
+            otherwise repeat fifty times, and explaining a fix to someone who
+            does not care how it works, only that it does. I am looking for a
+            support, systems, or infrastructure role on a team that likes
+            problems solved at the root. If that sounds like your team, get in
+            touch below.
           </p>
 
           <h3 className="mt-10 text-sm font-semibold uppercase tracking-wide text-black dark:text-zinc-50">

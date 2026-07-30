@@ -1,8 +1,28 @@
+"use client";
+
+import type { MouseEvent } from "react";
+
+/** Height of the sticky header (h-16), so sections don't land underneath it. */
+const HEADER_OFFSET = 64;
+
 const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
+
+function scrollToHash(event: MouseEvent<HTMLAnchorElement>, href: string) {
+  const target = document.querySelector(href);
+  if (!target) return;
+
+  event.preventDefault();
+
+  const top =
+    target.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+
+  window.scrollTo({ top: Math.max(top, 0), behavior: "smooth" });
+  history.pushState(null, "", href);
+}
 
 export default function Header() {
   return (
@@ -13,6 +33,7 @@ export default function Header() {
       >
         <a
           href="#top"
+          onClick={(event) => scrollToHash(event, "#top")}
           className="text-lg font-semibold tracking-tight text-black dark:text-zinc-50"
         >
           Ryan Huey
@@ -23,6 +44,7 @@ export default function Header() {
             <li key={link.href}>
               <a
                 href={link.href}
+                onClick={(event) => scrollToHash(event, link.href)}
                 className="text-sm font-medium text-zinc-600 transition-colors hover:text-black dark:text-zinc-400 dark:hover:text-zinc-50"
               >
                 {link.label}

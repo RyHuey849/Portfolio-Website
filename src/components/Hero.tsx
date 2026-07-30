@@ -9,8 +9,10 @@ export default function Hero() {
       </h1>
 
       <p className="mt-6 max-w-2xl text-balance text-xl font-medium leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-2xl">
-        Software engineer building fast, accessible web applications from the
-        interface down to the infrastructure.
+        Software engineer moving into IT. I build web applications, and I am
+        happiest in the layer underneath them — systems, networks, and the
+        infrastructure that keeps everything running. Currently looking for an
+        IT role.
       </p>
 
       <div className="mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
